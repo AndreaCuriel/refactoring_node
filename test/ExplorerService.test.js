@@ -15,6 +15,6 @@ describe("ExplorerService test", () => {
       "node"
     );
 
-    expect(filterExplorer).toBe(1);
+    expect(filterExplorer).toBe(2);
   });
 });
