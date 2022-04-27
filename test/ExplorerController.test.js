@@ -1,27 +1,27 @@
 const ExplorerController = require("../lib/controllers/ExplorerController");
 
 describe("ExplorerController test", () => {
-  test("1) Método getExplorersByMission", () => {
-    const List = ExplorerController.getExplorersByMission("node");
+    test("1) Método getExplorersByMission", () => {
+        const List = ExplorerController.getExplorersByMission("node");
 
-    expect(List[0].name).toBe("Woopa1");
-  });
+        expect(List[0].name).toBe("Woopa1");
+    });
 
-  test("2) getExplorersUsernamesByMission Método ", () => {
-    const ListNames = ExplorerController.getExplorersUsernamesByMission("node");
+    test("2) getExplorersUsernamesByMission Método ", () => {
+        const ListNames = ExplorerController.getExplorersUsernamesByMission("node");
 
-    expect(ListNames[0]).toBe("ajolonauta1");
-  });
+        expect(ListNames[0]).toBe("ajolonauta1");
+    });
 
-  test("3) getExplorersAmonutByMission Método ", () => {
-    const NumAmonut = ExplorerController.getExplorersAmonutByMission("node");
+    test("3) getExplorersAmonutByMission Método ", () => {
+        const NumAmonut = ExplorerController.getExplorersAmonutByMission("node");
 
-    expect(typeof NumAmonut).toBe("number");
-  });
+        expect(typeof NumAmonut).toBe("number");
+    });
 
-  test("4) getValidationInNumber Método ", () => {
-    const trick = ExplorerController.getValidationInNumber(3);
+    test("4) getValidationInNumber Método ", () => {
+        const trick = ExplorerController.getValidationInNumber(3);
 
-    expect(trick).toBe("FIZZ");
-  });
+        expect(trick).toBe("FIZZ");
+    });
 });
