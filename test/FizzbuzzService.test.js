@@ -21,10 +21,10 @@ describe("FizzbussService test", () => {
   });
 
   test("1) Test validations - applyValidationInNumber", () => {
-    const Fizzbuss1 = FizzbuzzService.applyValidationInNumber(1); // {name: "Explorer1", score: 1, trick: 1}
-    const Fizzbuss3 = FizzbuzzService.applyValidationInNumber(3); // {name: "Explorer3", score: 3, trick: "FIZZ"}
-    const Fizzbuss5 = FizzbuzzService.applyValidationInNumber(5); // {name: "Explorer5", score: 5, trick: "BUZZ"}
-    const Fizzbuss15 = FizzbuzzService.applyValidationInNumber(15); // {name: "Explorer15", score: 15, trick: "FIZZBUZZ"}
+    const Fizzbuss1 = FizzbuzzService.applyValidationInNumber(1);
+    const Fizzbuss3 = FizzbuzzService.applyValidationInNumber(3);
+    const Fizzbuss5 = FizzbuzzService.applyValidationInNumber(5);
+    const Fizzbuss15 = FizzbuzzService.applyValidationInNumber(15);
 
     expect(Fizzbuss1).toBe(1);
     expect(Fizzbuss3).toBe("FIZZ");
