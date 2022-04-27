@@ -22,6 +22,6 @@ describe("ExplorerController test", () => {
   test("4) getValidationInNumber Método ", () => {
     const trick = ExplorerController.getValidationInNumber(3);
 
-    expect(trick).toBe("BIZZ");
+    expect(trick).toBe("FIZZ");
   });
 });
