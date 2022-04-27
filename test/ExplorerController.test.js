@@ -4,6 +4,6 @@ describe("ExplorerController test", () => {
   test("1) Método getExplorersByMission", () => {
     const List = ExplorerController.getExplorersByMission("node");
 
-    expect(List[0].name).toBe("Woopa2");
+    expect(List[0].name).toBe("Woopa1");
   });
 });
