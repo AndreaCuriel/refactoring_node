@@ -7,19 +7,19 @@ const explorers = Reader.readJsonFile("explorers.json");
 const explorersInNode = ExplorerService.filterByMission(explorers, "node");
 
 const ExplorersLen = ExplorerService.getAmountOfExplorersByMission(
-  explorers,
-  "node"
+    explorers,
+    "node"
 );
 console.log(ExplorersLen);
 
 const ExplorersNames = ExplorerService.getExplorersUsernamesByMission(
-  explorers,
-  "node"
+    explorers,
+    "node"
 );
 console.log(ExplorersNames);
 
 const explorersInNodeAndFIZZOrBUZZOrFIZZBUUZZTrick = explorersInNode.map(
-  (explorer) => FizzbussService.applyValidationInExplorer(explorer)
+    (explorer) => FizzbussService.applyValidationInExplorer(explorer)
 );
 
 console.log(explorersInNodeAndFIZZOrBUZZOrFIZZBUUZZTrick);
