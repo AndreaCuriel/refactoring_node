@@ -15,7 +15,7 @@ describe("FizzbussService test", () => {
     const Fizzbuss15 = FizzbuzzService.applyValidationInExplorer(explorer15); // {name: "Explorer15", score: 15, trick: "FIZZBUZZ"}
 
     expect(Fizzbuss1.trick).toBe(1);
-    expect(Fizzbuss3.trick).toBe("FIIZ");
+    expect(Fizzbuss3.trick).toBe("FIZZ");
     expect(Fizzbuss5.trick).toBe("BUZZ");
     expect(Fizzbuss15.trick).toBe("FIZZBUZZ");
   });
