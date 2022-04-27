@@ -8,7 +8,7 @@ describe("ExplorerController test", () => {
   });
 
   test("2) getExplorersUsernamesByMission Método ", () => {
-    const ListNames = ExplorerController.getExplorersUsernamesByMission("java");
+    const ListNames = ExplorerController.getExplorersUsernamesByMission("node");
 
     expect(ListNames[0]).toBe("ajolonauta1");
   });
