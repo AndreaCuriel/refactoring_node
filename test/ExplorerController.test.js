@@ -6,4 +6,10 @@ describe("ExplorerController test", () => {
 
     expect(List[0].name).toBe("Woopa1");
   });
+
+  test("2) getExplorersUsernamesByMission Método ", () => {
+    const ListNames = ExplorerController.getExplorersUsernamesByMission("java");
+
+    expect(ListNames[0]).toBe("ajolonauta1");
+  });
 });
