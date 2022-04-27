@@ -12,4 +12,10 @@ describe("ExplorerController test", () => {
 
     expect(ListNames[0]).toBe("ajolonauta1");
   });
+
+  test("3) getExplorersAmonutByMission Método ", () => {
+    const NumAmonut = ExplorerController.getExplorersAmonutByMission("node");
+
+    expect(typeof NumAmonut).toBe("number");
+  });
 });
